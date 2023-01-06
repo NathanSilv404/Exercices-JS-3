@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Exercice 1</title>
-  </head>
-  <body>
-      <img src="images/image1.jpg" id="image1"/>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 1</title>
+</head>
+
+<body>
+
+  <img id='Img' src="images/image1.jpg" onmouseover="hover();" onmouseout="hoverOut()" />
+
+  <script>
+
+    function hover () {
+      document.getElementById("Img").style.border = "3px solid red";
+    }
+
+    function hoverOut () {
+      document.getElementById("Img").style.border = "";
+    }
+
+
+  </script>
+
+
+</body>
+
 </html>
